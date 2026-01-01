@@ -3,8 +3,8 @@
 import { useState } from "react";
 import { useQuery, keepPreviousData } from "@tanstack/react-query";
 import css from "./Notes.client.module.css";
-import { fetchNotes } from "@/lib/api";
-import type { FetchNotesResponse } from "@/lib/api";
+import { fetchNotes } from "@/lib/api/clientApi";
+import type { FetchNotesResponse } from "@/lib/api/clientApi";
 import NoteList from "@/components/NoteList/NoteList";
 import Pagination from "@/components/Pagination/Pagination";
 // import Modal from "@/components/Modal/Modal";
