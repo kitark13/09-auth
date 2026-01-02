@@ -22,7 +22,7 @@ function AuthNavigation() {
   return (
     <>
       {isAuthenticated ? (
-        <div>
+        <>
           <li className={css.navigationItem}>
             <Link
               href="/profile"
@@ -39,9 +39,9 @@ function AuthNavigation() {
               Logout
             </button>
           </li>
-        </div>
+        </>
       ) : (
-        <div>
+        <>
           <li className={css.navigationItem}>
             <Link
               href="/sign-in"
@@ -61,7 +61,7 @@ function AuthNavigation() {
               Sign up
             </Link>
           </li>
-        </div>
+        </>
       )}
     </>
   );

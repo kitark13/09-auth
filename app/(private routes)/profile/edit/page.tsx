@@ -14,7 +14,7 @@ function Edit() {
 
   if (!user) {
     router.push("/sign-in");
-    return;
+    return null;
   }
 
   const handleSubmit = async (formData: FormData) => {
